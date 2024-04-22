@@ -7,8 +7,8 @@ class Base:
     
     __nb_objects = 0
 
-    """Create constructure"""
     def __init__(self, id=None):
+        """Constructure """
         if id is not None:
             self.id = id
         else:
