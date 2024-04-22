@@ -84,12 +84,14 @@ class Rectangle(Base):
         return self.width * self.height
 
     def display(self):
-        """Display the rectangle with '#' symbols"""
+        """Display the rectangle with '#' symbols, considering x and y positions"""
 
-        for i in range(self.height):
-            for j in range(self.width):
-                print("#", end="")
-            print()
+        for _ in range(self.y):
+            print()  # Print empty lines for y offset
+
+        for _ in range(self.height):
+            print(" " * self.x, end="")  # Print spaces for x offset
+            print("#" * self.width)
     
     def __str__(self):
         '''Returns string info about this rectangle.'''
