@@ -105,6 +105,7 @@ sys
 In the container, use the credentials root/root.
 
 ---
+---
 
 This README provides an overview of the SQL Introduction project, detailing the essential topics covered, requirements, and steps to set up and use MySQL on Ubuntu 20.04 LTS. This project is designed to familiarize you with SQL and relational databases, providing a foundation for more advanced database management tasks.
 
