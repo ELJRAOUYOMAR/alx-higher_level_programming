@@ -19,7 +19,7 @@
 - [What an HTTP Cookie is](#what-an-http-cookie-is)
 - [How to make a request with cURL](#how-to-make-a-request-with-curl)
 - [What happens when you type google.com in your browser](#what-happens-when-you-type-googlecom-in-your-browser)
-
+- [CURL command Line](#cURL)
 ## General
 
 This README provides an overview of basic web concepts and how they interact to enable web communication. It covers URLs, HTTP, domain names, HTTP headers, cookies, and making requests with cURL.
@@ -247,7 +247,7 @@ Content-Type: text/html
 5. The browser renders and displays the Google homepage.
 
 
-## cURL
+# cURL
 cURL (Client for URLs) is a command-line tool used for transferring data with URLs. It supports a variety of protocols including HTTP, HTTPS, FTP, and more. cURL is commonly used to make HTTP requests, upload files, and interact with RESTful APIs. Below are some key aspects and examples of using cURL.
 
 #### Basic cURL Commands
