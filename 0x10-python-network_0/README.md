@@ -211,7 +211,7 @@ cURL is a command-line tool for transferring data with URLs.
 
 ### Example
 To make a GET request:
-````sh
+```sh
 curl http://example.com
 ```
 To make a POST request:
