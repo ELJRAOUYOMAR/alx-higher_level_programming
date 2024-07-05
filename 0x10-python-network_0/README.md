@@ -95,6 +95,7 @@ curl http://example.com
 
 To make a POST request:
 curl -X POST -d "param1=value1&param2=value2" http://example.com
+```
 
 #what-happens-when-you-type-googlecom-in-your-browser
 
