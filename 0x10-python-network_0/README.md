@@ -233,12 +233,12 @@ When you type google.com:
 2. The browser establishes a TCP connection to 142.250.190.78.
 3. The browser sends:
 
-````sh
+```sh
 GET / HTTP/1.1
 Host: www.google.com
 ```
 4. The server responds:
-````sh
+```sh
 HTTP/1.1 200 OK
 Content-Type: text/html
 ...
