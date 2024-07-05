@@ -133,7 +133,7 @@ Content-Length: 1234
 </body>
 </html>
 ```
-#what-http-headers-are
+# what-http-headers-are
 HTTP headers are key-value pairs included in HTTP requests and responses. They provide metadata and control information.
 
 Example
@@ -150,7 +150,7 @@ Content-Length: 1234
 Server: Apache/2.4.1
 ```
 
-#what-the-http-message-body-is
+# what-the-http-message-body-is
 The HTTP message body contains the data being transmitted in an HTTP request or response. It is optional and typically used with methods like POST or PUT.
 ### Example
 Request body for a POST request:
@@ -164,7 +164,7 @@ Content-Length: 27
 name=John&age=30&city=New+York
 ```
 
-#what-an-http-request-method-is
+# what-an-http-request-method-is
 HTTP request methods indicate the desired action to be performed on a resource. Common methods include:
 - GET: Retrieve data from the server.
 - POST: Submit data to be processed by the server.
@@ -179,7 +179,7 @@ PUT /update-resource HTTP/1.1
 DELETE /delete-resource HTTP/1.1
 ```
 
-#what-an-http-response-status-code-is
+# what-an-http-response-status-code-is
 HTTP response status codes indicate the result of the request. Common status codes include:
 
 - 200 OK: The request was successful.
@@ -192,7 +192,7 @@ HTTP/1.1 404 Not Found
 HTTP/1.1 500 Internal Server Error
 ```
 
-#what-an-http-cookie-is
+# what-an-http-cookie-is
 
 An HTTP cookie is a small piece of data sent from the server and stored on the client side. Cookies are used to remember information about the user.
 
@@ -206,7 +206,7 @@ Sending a cookie with a request:
 Cookie: sessionId=abc123
 ```
 
-#how-to-make-a-request-with-curl
+# how-to-make-a-request-with-curl
 cURL is a command-line tool for transferring data with URLs.
 
 ### Example
@@ -218,7 +218,7 @@ To make a POST request:
 ```sh
 To make a POST request:
 ```
-#what-happens-when-you-type-googlecom-in-your-browser
+# what-happens-when-you-type-googlecom-in-your-browser
 Steps:
 1. DNS Resolution: The browser resolves the domain name google.com to an IP address using DNS (Domain Name System).
 2. TCP Connection: The browser establishes a TCP connection to the server at the resolved IP address.
