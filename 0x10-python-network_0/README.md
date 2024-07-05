@@ -247,7 +247,116 @@ Content-Type: text/html
 5. The browser renders and displays the Google homepage.
 
 
+## cURL
+cURL (Client for URLs) is a command-line tool used for transferring data with URLs. It supports a variety of protocols including HTTP, HTTPS, FTP, and more. cURL is commonly used to make HTTP requests, upload files, and interact with RESTful APIs. Below are some key aspects and examples of using cURL.
 
+#### Basic cURL Commands
+1. Make a GET Request
+
+The simplest use of cURL is to fetch a URL.
+````sh
+curl http://example.com
+```
+This command fetches the content of http://example.com and displays it in the terminal.
+
+2. Make a POST Request
+
+You can use cURL to send data to the server using the POST method.
+````sh
+curl -X POST -d "param1=value1&param2=value2" http://example.com
+```
+This sends a POST request to http://example.com with the specified data.
+
+3. Send JSON Data
+
+To send JSON data, you need to set the content type header and pass the data in JSON format.
+```sh
+curl -X POST -H "Content-Type: application/json" -d '{"key1":"value1", "key2":"value2"}' http://example.com
+```
+4. Set Headers
+
+You can specify custom headers to be sent with your request.
+```sh
+curl -H "Authorization: Bearer YOUR_TOKEN" http://example.com
+```
+
+5. Download a File
+
+To download a file from a URL, you can use the -O option.
+```sh
+curl -O http://example.com/file.zip
+```
+This downloads file.zip from the specified URL to the current directory.
+
+6. Follow Redirects
+If the URL you are accessing redirects to another URL, you can use the -L option to follow the redirects.
+```sh
+curl -L http://example.com
+```
+7. Save Output to a File
+
+You can save the output of a cURL request to a file using the -o option.
+```sh
+curl -o output.html http://example.com
+```
+
+8. Show Response Headers
+
+To see the headers of the response, you can use the -I option.
+````sh
+curl -I http://example.com
+```
+
+### Authentication
+1. Basic Authentication
+
+For endpoints that require basic authentication, you can pass the username and password using the -u option.
+```sh
+curl -u username:password http://example.com
+```
+
+2. Bearer Token
+
+For endpoints that require a bearer token, you can set the Authorization header.
+```sh
+curl -H "Authorization: Bearer YOUR_TOKEN" http://example.com
+```
+
+
+### Debugging
+1. Verbose Mode
+
+To see detailed information about the request and response, you can use the -v option.
+```sh
+curl -v http://example.com
+```
+2. Include Response Headers
+
+To include the response headers in the output, you can use the -i option.
+```sh
+curl -i http://example.com
+```
+### Advanced Usage
+1. Upload a File
+
+To upload a file, you can use the -F option to specify the file and field name.
+```sh
+curl -F "file=@/path/to/file.txt" http://example.com/upload
+```
+2.Send Multiple Headers
+
+To send multiple headers, you can use multiple -H options.
+```sh
+curl -H "Header1: value1" -H "Header2: value2" http://example.com
+```
+
+3. Limit Transfer Rate
+
+You can limit the transfer rate using the --limit-rate option.
+```sh
+curl --limit-rate 100k http://example.com
+```
+cURL is a powerful tool with a wide range of options and capabilities. It is widely used for testing APIs, automating tasks, and debugging network issues.
 
 
 
