@@ -254,7 +254,7 @@ cURL (Client for URLs) is a command-line tool used for transferring data with UR
 1. Make a GET Request
 
 The simplest use of cURL is to fetch a URL.
-````sh
+```sh
 curl http://example.com
 ```
 This command fetches the content of http://example.com and displays it in the terminal.
@@ -262,7 +262,7 @@ This command fetches the content of http://example.com and displays it in the te
 2. Make a POST Request
 
 You can use cURL to send data to the server using the POST method.
-````sh
+```sh
 curl -X POST -d "param1=value1&param2=value2" http://example.com
 ```
 This sends a POST request to http://example.com with the specified data.
@@ -303,7 +303,7 @@ curl -o output.html http://example.com
 8. Show Response Headers
 
 To see the headers of the response, you can use the -I option.
-````sh
+```sh
 curl -I http://example.com
 ```
 
